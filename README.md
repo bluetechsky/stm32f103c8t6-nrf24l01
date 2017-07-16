@@ -5,7 +5,9 @@ I use Keil C 5 (V 5.11.0.0) + STM32CubeMX (V4.21.0)
 # Pin connection:
 
 Transmitter & Receiver (same pin connection)
+
 STM32F103C8T6  |  NRF24L01
+
 3.3V -->  VCC
 
 PA1  -->  CE
