@@ -7,12 +7,19 @@ I use Keil C 5 (V 5.11.0.0) + STM32CubeMX (V4.21.0)
 Transmitter & Receiver (same pin connection)
 STM32F103C8T6  |  NRF24L01
 3.3V -->  VCC
+
 PA1  -->  CE
+
 PA2  -->  CSN
+
 PA3  -->  SCK
+
 PA4  -->  MOSI
+
 PA5  -->  MISO
+
 GND  -->  GND
+
 
 # STM32CubeMX
 # Pinout:
@@ -29,31 +36,47 @@ HCLK (MHz): 72 MHz
 # Configuration 
 GPIO
 PA1,PA2, PA3, PA4: GPIO_Output
+
 PA5: GPIO_Input
+
 (Optional) PC13: GPIO_Output
 
+
 PA1,PA2, PA3, PA4: Maxium output speed: High (all from PA1 to PA4)
+
 PA5: Maxium output speed: n/a
+
 PC13: Maxium output speed: Low (==no change)
+
 User Label: 
+
 PA1: NRF_CE
+
 PA2: NRF_CSN
+
 PA3: NRF_SCK
+
 PA4: NRF_MOSI
+
 PA5: NRF_MISO
+
 
 
 UART1: NVIC settings: Enabled -> True
 
+
 Then Generate code to Keil C 5 
 Mcu: STM32F103C8Tx
+
 Firmware Package Name and Version:
+
 STM32Cube FW_F1 V1.4.0
+
 
 Use Default Firmware Location:
 C:\Users\YOURUSERNAME\STM32Cube\Repository\STM32Cube_FW_F1_V1.4.0
 
-## Keil C 5
+# Keil C 5
 Add CTR_nrf24l01.c to Application/User folder
 
 in main.c
