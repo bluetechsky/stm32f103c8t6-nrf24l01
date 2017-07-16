@@ -24,10 +24,15 @@ GND  -->  GND
 # STM32CubeMX
 # Pinout:
 RCC
+
 --- High Speed Clock: Crystal/Ceramic Resonator
+
 SYS
+
 --- Debug: Serial Wire
+
 UART1
+
 --- Mode: Asynchronous
 
 # Clock Configuration
