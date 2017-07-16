@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"machphat_nrf24l01\stm32f1xx_it.o"
+"machphat_nrf24l01\main.o"
+"machphat_nrf24l01\stm32f1xx_hal_msp.o"
+"machphat_nrf24l01\ctr_nrf24l01.o"
+"machphat_nrf24l01\startup_stm32f103xb.o"
+"machphat_nrf24l01\stm32f1xx_hal_cortex.o"
+"machphat_nrf24l01\stm32f1xx_hal_rcc.o"
+"machphat_nrf24l01\stm32f1xx_hal.o"
+"machphat_nrf24l01\stm32f1xx_hal_gpio_ex.o"
+"machphat_nrf24l01\stm32f1xx_hal_flash.o"
+"machphat_nrf24l01\stm32f1xx_hal_dma.o"
+"machphat_nrf24l01\stm32f1xx_hal_flash_ex.o"
+"machphat_nrf24l01\stm32f1xx_hal_gpio.o"
+"machphat_nrf24l01\stm32f1xx_hal_pwr.o"
+"machphat_nrf24l01\stm32f1xx_hal_rcc_ex.o"
+"machphat_nrf24l01\stm32f1xx_hal_tim.o"
+"machphat_nrf24l01\stm32f1xx_hal_tim_ex.o"
+"machphat_nrf24l01\stm32f1xx_hal_uart.o"
+"machphat_nrf24l01\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "MACHPHAT_NRF24L01\MACHPHAT_NRF24L01.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MACHPHAT_NRF24L01.map" -o MACHPHAT_NRF24L01\MACHPHAT_NRF24L01.axf

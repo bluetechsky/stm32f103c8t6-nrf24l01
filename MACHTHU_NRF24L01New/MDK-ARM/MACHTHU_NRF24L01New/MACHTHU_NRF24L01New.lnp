@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"machthu_nrf24l01new\stm32f1xx_hal_dma.o"
+"machthu_nrf24l01new\stm32f1xx_hal_rcc.o"
+"machthu_nrf24l01new\stm32f1xx_hal_uart.o"
+"machthu_nrf24l01new\stm32f1xx_hal_rcc_ex.o"
+"machthu_nrf24l01new\stm32f1xx_hal_cortex.o"
+"machthu_nrf24l01new\stm32f1xx_hal_gpio.o"
+"machthu_nrf24l01new\stm32f1xx_hal_flash_ex.o"
+"machthu_nrf24l01new\stm32f1xx_hal_gpio_ex.o"
+"machthu_nrf24l01new\stm32f1xx_hal.o"
+"machthu_nrf24l01new\stm32f1xx_hal_flash.o"
+"machthu_nrf24l01new\stm32f1xx_hal_tim.o"
+"machthu_nrf24l01new\stm32f1xx_hal_pwr.o"
+"machthu_nrf24l01new\stm32f1xx_hal_tim_ex.o"
+"machthu_nrf24l01new\main.o"
+"machthu_nrf24l01new\stm32f1xx_it.o"
+"machthu_nrf24l01new\stm32f1xx_hal_msp.o"
+"machthu_nrf24l01new\ctr_nrf24l01.o"
+"machthu_nrf24l01new\startup_stm32f103xb.o"
+"machthu_nrf24l01new\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "MACHTHU_NRF24L01New\MACHTHU_NRF24L01New.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MACHTHU_NRF24L01New.map" -o MACHTHU_NRF24L01New\MACHTHU_NRF24L01New.axf
